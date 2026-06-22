@@ -1,5 +1,6 @@
 import streamlit as st
 from openai import OpenAI
+import os
 
 # ==========================================
 # 1. 界面与前置干预 (降低 PR, 提升 Trust, PEOU)
