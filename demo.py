@@ -13,7 +13,7 @@ st.info("💡 隐私与安全声明：本系统仅供学术调研使用，您的
 # ==========================================
 # 2. 配置大模型 API
 # ==========================================
-DEEPSEEK_API_KEY = "sk-91bdae9c97d84dba9026d71fd56c4099"
+DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY")
 client = OpenAI(api_key=DEEPSEEK_API_KEY, base_url="https://api.deepseek.com")
 
 # ==========================================
